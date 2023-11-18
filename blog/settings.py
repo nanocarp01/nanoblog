@@ -12,6 +12,11 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 import os
 from pathlib import Path
+#from decouple import config, Csv
+
+#DEBUG = config('DEBUG', default=False, cast=bool)
+#SECRET_KEY = config('SECRET_KEY')
+#DATABASE_URL = config('DATABASE_URL', default='sqlite:///:memory:', cast=str)
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -24,7 +29,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-^g2-+d_#^)6d0ob(w%byt$3dvfrufx=j&q(u#*aj@76534h^_x'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+#DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 PORT = 8081
