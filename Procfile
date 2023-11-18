@@ -1,1 +1,2 @@
-web: gunicorn blog.wsgi:application --bind 0.0.0.0:$PORT --proxy-allow-from "*" --proxy-headers
+web: gunicorn blog.wsgi:application --bind 0.0.0.0:$PORT
+
