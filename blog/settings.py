@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-^g2-+d_#^)6d0ob(w%byt$3dvfrufx=j&q(u#*aj@76534h^_x
 DEBUG = False
 
 ALLOWED_HOSTS = ['*']
-PORT = 443
+PORT = 8081
 
 
 # Application definition
