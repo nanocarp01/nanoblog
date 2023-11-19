@@ -141,5 +141,5 @@ DATABASES = {
     }
 }
 
-CSRF_TRUSTED_ORIGINS = ['nanoblog-dev-pfzt.4.us-1.fl0.io']
+CSRF_TRUSTED_ORIGINS = ['https://nanoblog-dev-pfzt.4.us-1.fl0.io']
 ]
