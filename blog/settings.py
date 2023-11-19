@@ -141,3 +141,14 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+# Configuración para CSRF
+CSRF_COOKIE_SECURE = True
+CSRF_USE_SESSIONS = True
+
+# Configuración para CORS (si es necesario)
+CORS_ALLOW_ALL_ORIGINS = False
+CORS_ALLOWED_ORIGINS = [
+    'https://nanoblog-dev-pfzt.4.us-1.fl0.io',
+    # Agrega cualquier otro dominio si es necesario
+]
