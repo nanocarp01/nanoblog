@@ -31,7 +31,7 @@ SECRET_KEY = 'django-insecure-^g2-+d_#^)6d0ob(w%byt$3dvfrufx=j&q(u#*aj@76534h^_x
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['nanoblog-dev-pfzt.4.us-1.fl0.io']
+ALLOWED_HOSTS = ['https://nanoblog-dev-pfzt.4.us-1.fl0.io/']
 
 PORT = 8081
 
