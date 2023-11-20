@@ -140,11 +140,13 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
+SESSION_COOKIE_SECURE = True  # Ajusta según tus necesidades
 # Configuración para CSRF
 CSRF_COOKIE_SECURE = True
 CSRF_USE_SESSIONS = True
 SESSION_COOKIE_SAMESITE = 'None'  # Ajusta según tus necesidades
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+SECURE_SSL_REDIRECT = True
 
 
 CSRF_FAILURE_VIEW = 'publi.views.csrf_error_handler'
