@@ -144,7 +144,8 @@ DATABASES = {
 # Configuración para CSRF
 CSRF_COOKIE_SECURE = True
 CSRF_USE_SESSIONS = True
-# settings.py
+SESSION_COOKIE_SAMESITE = 'None'  # Ajusta según tus necesidades
+
 
 CSRF_FAILURE_VIEW = 'publi.views.csrf_error_handler'
 
