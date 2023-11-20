@@ -31,7 +31,7 @@ SECRET_KEY = 'django-insecure-^g2-+d_#^)6d0ob(w%byt$3dvfrufx=j&q(u#*aj@76534h^_x
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['nanoblog-dev-pfzt.4.us-1.fl0.io/']
+ALLOWED_HOSTS = ['nanoblog-dev-pfzt.4.us-1.fl0.io']
 
 PORT = 8081
 
@@ -124,9 +124,9 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (os.path.join(BASE_DIR,'static'),)
-#if not DEBUG:
- #   STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-  #  STATIC_STORAGE = 'whitenoise.storage.CompressedManifestStaticFileStorage'
+if not DEBUG:
+    STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+    STATIC_STORAGE = 'whitenoise.storage.CompressedManifestStaticFileStorage'
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
@@ -141,6 +141,13 @@ DATABASES = {
     }
 }
 
-#CSRF_TRUSTED_ORIGINS = ['https://nanoblog-dev-pfzt.4.us-1.fl0.io/']
-#HOST_NAME='https://nanoblog-dev-pfzt.4.us-1.fl0.io/'
+# Configuración para CSRF
+CSRF_COOKIE_SECURE = True
+CSRF_USE_SESSIONS = True
+
+# Configuración para CORS (si es necesario)
+CORS_ALLOW_ALL_ORIGINS = False
+CORS_ALLOWED_ORIGINS = [
+    'nanoblog-dev-pfzt.4.us-1.fl0.io',
+    # Agrega cualquier otro dominio si es necesario
 ]
