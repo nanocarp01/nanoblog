@@ -16,8 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
+from .views import csrf_error_handler
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include(('publi.urls','blog'))),
+    path('csrf-error/', csrf_error_handler, name='csrf_error_handler'),
 ]
