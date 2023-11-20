@@ -142,8 +142,8 @@ DATABASES = {
 }
 SESSION_COOKIE_SECURE = True  # Ajusta según tus necesidades
 # Configuración para CSRF
-CSRF_COOKIE_SECURE = False
-CSRF_USE_SESSIONS = False
+CSRF_COOKIE_SECURE = True
+CSRF_USE_SESSIONS = True
 SESSION_COOKIE_SAMESITE = 'None'  # Ajusta según tus necesidades
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 SECURE_SSL_REDIRECT = True
@@ -153,7 +153,7 @@ CSRF_FAILURE_VIEW = 'publi.views.csrf_error_handler'
 
 
 # Configuración para CORS (si es necesario)
-CORS_ALLOW_ALL_ORIGINS = False
+CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOWED_ORIGINS = [
     'https://nanoblog-dev-pfzt.4.us-1.fl0.io',
     # Agrega cualquier otro dominio si es necesario
