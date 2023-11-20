@@ -27,8 +27,9 @@ def detallePost(request,slug):
     return render(request,"post.html",{"detalle_post":post})
 
 def post(request):
-    post = Post.objects.filter(estado = True, categoria = Categoria.objects.get(nombre__iexact = 'Cuentos'))
+    post = Post.objects.filter(estado = True, categoria = Categoria.objects.get(nombre__iexact = 'Lectura'))
     return render (request,'post.html',{'post':post})
 
 def fotos(request):
-    return render (request,'fotos.html')
+    fotos = Post.objects.filter(estado = True, categoria = Categoria.objects.get(nombre__iexact = 'Fotos'))
+    return render (request,'fotos.html', {'fotos':fotos})
