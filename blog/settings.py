@@ -146,7 +146,7 @@ CSRF_COOKIE_SECURE = True
 CSRF_USE_SESSIONS = True
 # settings.py
 
-#CSRF_FAILURE_VIEW = 'blog.views.csrf_error_handler'
+CSRF_FAILURE_VIEW = 'publi.views.csrf_error_handler'
 
 
 # Configuración para CORS (si es necesario)
