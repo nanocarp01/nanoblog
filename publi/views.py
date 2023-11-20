@@ -3,6 +3,10 @@ from .models import Post, Categoria
 from django.shortcuts import get_object_or_404
 from django.db.models import Q
 from django.core.paginator import Paginator
+from django.http import HttpResponseForbidden
+
+def csrf_error_handler(request, reason=""):
+    return HttpResponseForbidden("Error CSRF al iniciar sesión: {}".format(reason))
 
 def home(request):
     queryset = request.GET.get("buscar")
