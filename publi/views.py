@@ -31,5 +31,5 @@ def post(request):
     return render (request,'post.html',{'post':post})
 
 def fotos(request):
-    fotos = Post.objects.filter(estado = True, categoria = Categoria.objects.get(nombre__iexact = 'Fotos'))
-    return render (request,'fotos.html', {'fotos':fotos})
+    post = Post.objects.filter(estado = True, categoria = Categoria.objects.get(nombre__iexact = 'Fotos'))
+    return render (request,'fotos.html', {'post':post})
