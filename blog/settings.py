@@ -153,6 +153,6 @@ CSRF_FAILURE_VIEW = 'publi.views.csrf_error_handler'
 # Configuración para CORS (si es necesario)
 CORS_ALLOW_ALL_ORIGINS = False
 CORS_ALLOWED_ORIGINS = [
-    'nanoblog-dev-pfzt.4.us-1.fl0.io',
+    'https://nanoblog-dev-pfzt.4.us-1.fl0.io',
     # Agrega cualquier otro dominio si es necesario
 ]
