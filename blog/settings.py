@@ -142,8 +142,8 @@ DATABASES = {
 }
 SESSION_COOKIE_SECURE = True  # Ajusta según tus necesidades
 # Configuración para CSRF
-CSRF_COOKIE_SECURE = True
-CSRF_USE_SESSIONS = True
+CSRF_COOKIE_SECURE = False
+CSRF_USE_SESSIONS = False
 SESSION_COOKIE_SAMESITE = 'None'  # Ajusta según tus necesidades
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 SECURE_SSL_REDIRECT = True
