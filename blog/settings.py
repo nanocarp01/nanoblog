@@ -124,9 +124,9 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (os.path.join(BASE_DIR,'static'),)
-if not DEBUG:
-    STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-    STATIC_STORAGE = 'whitenoise.storage.CompressedManifestStaticFileStorage'
+#if not DEBUG:
+ #   STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+  #  STATIC_STORAGE = 'whitenoise.storage.CompressedManifestStaticFileStorage'
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
@@ -142,5 +142,5 @@ DATABASES = {
 }
 
 #CSRF_TRUSTED_ORIGINS = ['https://nanoblog-dev-pfzt.4.us-1.fl0.io/']
-HOST_NAME='https://nanoblog-dev-pfzt.4.us-1.fl0.io/'
+#HOST_NAME='https://nanoblog-dev-pfzt.4.us-1.fl0.io/'
 ]
