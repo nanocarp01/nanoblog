@@ -144,6 +144,10 @@ DATABASES = {
 # Configuración para CSRF
 CSRF_COOKIE_SECURE = True
 CSRF_USE_SESSIONS = True
+# settings.py
+
+CSRF_FAILURE_VIEW = 'blog.views.csrf_error_handler'
+
 
 # Configuración para CORS (si es necesario)
 CORS_ALLOW_ALL_ORIGINS = False
